@@ -1,8 +1,8 @@
 {
   "name": "angular-environment",
   "main": "dist/angular-environment.js",
-  "version": "1.0.4",
-  "homepage": "https://github.com/juanpablob/angular-environment",
+  "version": "1.0.5",
+  "homepage": "https://github.com/node-packages/angular-environment",
   "authors": [
     "juanpablob <m.juanpablob@gmail.com>"
   ],

@@ -1,11 +1,11 @@
 {
   "name": "angular-environment",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "AngujarJS Environment Plugin",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/juanpablob/angular-environment.git"
+    "url": "git+https://github.com/node-packages/angular-environment.git"
   },
   "keywords": [
     "angular",
@@ -21,9 +21,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/juanpablob/angular-environment/issues"
+    "url": "https://github.com/node-packages/angular-environment/issues"
   },
-  "homepage": "https://github.com/juanpablob/angular-environment#readme",
+  "homepage": "https://github.com/node-packages/angular-environment#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
