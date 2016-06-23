@@ -56,7 +56,11 @@ angular.module('environment', []).
 		 */
 		this.read = function(variable) {
 			if (variable !== 'all') {
-				return this.data.vars[this.get()][variable];
+				var result = this.data.vars[this.get()][variable];
+				if (result === undefined) {
+					result = this.data.vars.shared[variable];
+				}
+				return result;
 			}
 
 			return this.data.vars[this.get()];
@@ -84,10 +88,11 @@ angular.module('environment', []).
 		this.check = function() {
 			var	location = window.location.href,
 					self = this;
-
+			location = location.toLowerCase();
 			angular.forEach(this.data.domains, function(v, k) {
 				angular.forEach(v, function(v) {
-					if (location.match(new RegExp("^http(s)?:\/\/" + v))) {
+					v = v.toLowerCase();
+					if (location.match('//.*' + v + '/?')) {
 						self.environment = k;
 					}
 				});
